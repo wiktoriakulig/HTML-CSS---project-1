@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*navigation*/
+
+.navigation-section {
+    height: 50px;
+	width: 100%;
+	background-color: #4e4e4e;
+}
+
+.navigation {
+    height: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-logo {
+    color: white;
+    font-weight: bold;
+}
+.nav-list {
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	text-decoration: none;
+    font-size: 18px;
+	color: white;
+    padding: 46px;
+}
+
+.contact a {
+    cursor: not-allowed;
+}
+
+/*header*/
+
+.header-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.header-img {
+    height: calc(100vh - 50px);
+    background-image: url(/image/Tło\ sekcji.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text {
+    color: #ffff;
+    font-weight: 700;
+}
+
+.header-text h1 {
+    font-size: 36px;
+}
+.header-text p {
+    font-size: 18px;
+    margin-top: 62px;
+}
+
+.header-btn {
+    border: solid 3px white;
+    width: 164px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-decoration: none;
+    margin-top: 43px;
+    cursor: pointer;
+    transition: background-color 1s ease-in;
+}
+
+.header-btn:hover {
+    background-color: white;
+    color:black;
+}
+
+/*main - about us*/
+
+.aboutus {
+    background-color: #F1F1F1;
+    padding: 70px 0;
+}
+
+.aboutus-title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 75px;
+}
+
+.specialist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.specialist-img {
+    background-position: center;
+    background-size: cover;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.specialist:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.img-straight {
+    background-image: url(/image/specialist-first.jpg);
+}
+
+.img-reverse {
+    background-image: url(/image/specialist-second.jpg);
+}
+
+.first {
+  margin-left: 60px;
+}
+
+.second {
+    margin-right: 60px;
+}
+
+.specialist-scribd h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/*main - offer*/
+
+.offer {
+    background-color: #405D78;
+    width: 100%;
+    padding: 70px 0;
+}
+.offer-title {
+    padding-bottom: 82px;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+}
+
+.offer-box {
+    width: 720px;
+    height: 450px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 63px;
+}
+
+.offer-box-item {
+    background-color: #F1F1F1;
+    width: 198px;
+    height: 193px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: all 0.5s ease-in;
+}
+
+.offer-box-item:hover {
+    transform: scale(1.05);
+}
+
+.offer-box-item p {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* footer */
+
+.footer-section {
+    height: 71px;
+    width: 100%;
+    background-color: #4e4e4e;
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffff;
+    letter-spacing: 1px;
+    display: flex-inline;
+}
+
+.footer i {
+    color: white;
+    font-size: 32px;
+    font-family: 'Font Awesome\ 5 free', 'Font Awesome\ 5 brands';
+    padding-right: 25px;
+}
